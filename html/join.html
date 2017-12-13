@@ -1,0 +1,152 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>The Stormcloaks | Join</title>
+    <link rel="stylesheet" type="text/css" href="../css/join.css">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Begin Menu voor PC -->
+         <header class="navbar">
+            <div>
+                <nav class="mainmenu">
+                    <ul>
+                        <li><a href="../html/home.html">Home</a></li>
+                        <li><a href="../html/about.html">About us</a></li>
+                        <li><a href="">Information</a>
+                            <ul id="submenu">
+                                <li><a href="../html/join.html">Join the Rebellion</a></li>
+                                <li><a href="../html/why.html">Why the Rebellion?</a></li>
+                                <li><a href="../html/history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/media.html">Media</a></li>
+                        <!-- Doet het niet: <li><a href="../html/overview.html">Overview</a></li> -->
+                        <li><a href="../html/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <!-- Eind Menu voor PC -->
+
+    <!-- Begin Menu voor Mobiel -->
+        <div class="mobmenu">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                        <!-- DRIE LIJNEN VAN MOBILE-MENU -->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <!-- =========================== -->   
+                    <ul class="menu">
+                        <a href="../html/home.html"><li>Home</li></a>
+                        <a href="../html/about.html"><li>About</li></a>
+                        <a href="../html/join.html"><li>Join the Rebellion</li></a>
+                        <a href="../html/why.html"><li>Why the Rebellion?</li></a>
+                        <a href="../html/history.html"><li>History</li></a>
+                        <!-- Doet het niet: <a href="../html/overview.html"><li>Overview</li></a> -->
+                        <a href="../html/media.html"><li>Media</li></a>
+                        <a href="../html/contact.html"><li>Contact</li></a>                                   
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    <!-- Eind Menu voor Mobiel -->
+
+    <!-- Begin Content Contact -->
+        <div class="text">
+            <p class="needyou">Join the Rebellion</p>
+            <div class="req">
+                    <p>[Every field with '<span class="redStar">*</span>' is required to be filled!]</p>
+            </div>
+            <hr>
+        </div>
+
+                
+        <div class="text">
+            <form>
+                <fieldset class="marginExtra">
+                    <span>What's your name?<span class="redStar"> *</span></span>
+                    <input class="FLname" type="text" name="firstname" placeholder="First Name:" required>
+                    <input class="FLname" type="text" name="lastname" placeholder="Last Name:" required>
+                </fieldset>
+
+                <fieldset class="marginExtra">
+                    <span>What's your E-mail?<span class="redStar"> *</span></span>
+                    <input class="FLname" type="email" name="email" placeholder="E-mail:" required>
+                </fieldset>
+
+                <fieldset class="marginExtra">
+                        <span>Gender:<span class="redStar"> *</span></span>
+                        <select class="FLname" required>
+                            <option class="option" value="Man">Male</option>
+                            <option class="option" value="Woman">Female</option>
+                            <option class="option" value="Other">Other</option>
+                        </select>
+                </fieldset>
+
+                <fieldset class="marginExtra">
+                        <span>Race:<span class="redStar"> *</span></span>
+                        <select class="FLname" required>
+                            <option class="option" value="Argonian">Argonian</option>
+                            <option class="option" value="Breton">Breton</option>
+                            <option class="option" value="Dark-Elf">Dark Elf</option>
+                            <option class="option" value="High-Elf">High Elf</option>
+                            <option class="option" value="Imperial">Imperial</option>
+                            <option class="option" value="Khajit">Khajit</option>
+                            <option class="option" value="Nord">Nord</option>
+                            <option class="option" value="Orc">Orc</option>
+                            <option class="option" value="Redguard">Redguard</option>
+                            <option class="option" value="Woold-Elf">Wood Elf</option>
+                        </select>
+                </fieldset>
+
+                <fieldset class="marginExtra">
+                    <span>City:<span class="redStar"> *</span></span>
+                    <select class="FLname" required>
+                        <option class="option" value="Windhelm">Windhelm</option>
+                        <option class="option" value="Markarth">Markarth</option>
+                        <option class="option" value="Riften">Riften</option>
+                        <option class="option" value="Whiterun">Whiterun</option>
+                        <option class="option" value="Solitude">Solitude</option>
+                        <option class="option" value="Dawnstar">Dawnstar</option>
+                        <option class="option" value="Winterhold">Winterhold</option>
+                        <option class="option" value="Morthal">Morthal</option>
+                        <select>
+                </fieldset>
+
+                <fieldset class="marginExtra">
+                        <span>I'm a worshipper of:</span><br>
+                        <ul>
+                            <li><input name="ninedivines" type="checkbox"> Akatosh<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Arkay <br></li>
+                            <li><input name="ninedivines" type="checkbox"> Dibella<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Julianos<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Kyrnareth<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Mara<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Stendarr<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Talos<br></li>
+                            <li><input name="ninedivines" type="checkbox"> Zenithar<br></li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="marginExtra">
+                            <span>Why do you want to join the Stormcloaks?</span>
+                            <textarea name="message" rows="6" cols="60">Tell us here!</textarea>
+                        </fieldset>
+
+                <fieldset class="marginExtra">
+                        <input type="submit" value="Send Information">
+                </fieldset>
+            </form>
+        </div>
+    <!-- Begin Content Contact -->
+</body>
+
+<footer>
+    <hr>
+    <p>| Made by: Martijn van Hulten &#38; Max Peters | <a class="footerlink" href="../html/overview.html">Sitemap</a> | &#169; Martijn &#38; Max Productions 2017 | </p>
+</footer>
+</html>

@@ -1,0 +1,413 @@
+/* Tablet / Mobile device resolutie */
+@media only screen and (min-width: 480px) {
+    
+    /*--- Begin PC menu ---*/
+        .navbar{
+            display: none;
+        }
+    /*--- Eind PC menu ---*/
+
+    /*--- Begin Mobiel CSS ---*/
+        a{
+            text-decoration: none;
+            color: #0f0f0f;
+            transition: color 0.3s ease;
+        }
+
+        a:hover{
+            color: #0e63da;
+        }
+
+        #menuToggle{
+            display: block;
+            position: fixed;
+            top: 40px;
+            left: 49px;
+            z-index: 1;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        #menuToggle input{
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+            -webkit-touch-callout: none;
+        }
+
+        #menuToggle span{
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #ebebeb;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+        }
+
+        #menuToggle span:first-child{
+            transform-origin: 0% 0%;
+        }
+
+        #menuToggle span:nth-last-child(2){
+            transform-origin: 0% 100%;
+        }
+
+        #menuToggle input:checked ~ span{
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background: #0f0f0f;         
+        }
+
+        /* --- Animatie van 3 STREEPJES naar KRUIS --- */
+            #menuToggle input:checked ~ span:nth-last-child(3){
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            #menuToggle input:checked ~ span:nth-last-child(2){
+                transform: rotate(-45deg) translate(0, -1px);
+            }
+        /* --- Eind Animatie van 3 STREEPJES naar KRUIS --- */
+
+            .menu{
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                margin: -100px 0 0 -50px;
+                padding: 50px;
+                padding-top: 125px;
+                
+                background: #ebebeb;
+                list-style-type: none;
+                -webkit-font-smoothing: antialiased;
+                
+                transform-origin: 0% 0%;
+                transform: translate(-100%, 0);
+                
+                transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+            }
+            
+            .menu li{
+                padding: 10px 0;
+                font-size: 22px;
+            }
+            
+            #menuToggle input:checked ~ ul{
+                transform: none;
+            }
+    /*--- Eind Mobiel CSS ---*/
+
+    /*--- Begin Algemene CSS ---*/
+        .cloakdiv{
+            display: flex;
+            justify-content: center;
+        }
+
+        .cloak{
+            width: 95%;
+            height: 95%;
+            position: center;
+        }
+        
+        .lore{
+            margin: 15px;
+            padding: 10px;
+            border: 1px dashed #ebebeb;
+        }
+
+        .text{
+            color: #ebebeb;
+            font-family: 'Mirza', cursive;
+            text-shadow: 2px 2px #3B3B3B;
+        }
+
+        .needyou{
+            font-family: 'Mirza', cursive;
+            text-shadow: 2px 2px #3B3B3B;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        hr{
+            border: 0;
+            height: 1px;
+            width: 95%;
+            background: #0f0f0f;
+            background-image: linear-gradient(to right, #ebebeb, #0f0f0f, #ebebeb);
+        }
+
+        .strong{
+            font-weight: bold;
+            font-size: 25px;
+            list-style: none;
+        }
+
+        .quote{
+            font-style: italic;
+        }
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: #0f0f0f;
+            color: #ebebeb;
+            font-family: "Avenir Next", "Avenir", sans-serif;
+        }
+
+        footer {
+            text-decoration: none;
+            text-align: center;
+            color: #ebebeb;
+            font-family: 'Mirza', cursive;
+            text-shadow: 2px 2px #3B3B3B;
+            bottom: 0;  
+        }
+        
+        footer a{
+            color: inherit;
+            text-decoration: none;
+        }
+    /*--- Eind Algemene CSS ---*/
+
+}
+
+/* Laptop / Desktop resolutie */
+@media only screen and (min-width: 1025px) {
+    
+    /*--- Begin Mobiel CSS ---*/
+
+        .mobmenu{
+            display: none;
+        }
+
+        a{
+            display: none;
+        }
+
+        a:hover{
+            display: none;
+        }
+
+        #menuToggle{
+            display: none;
+        }
+
+        #menuToggle input{
+            display: none;
+        }
+
+        #menuToggle span{
+            display: none;
+        }
+
+        #menuToggle span:first-child{
+            display: none;
+        }
+
+        #menuToggle span:nth-last-child(2){
+            display: none;
+        }
+
+        #menuToggle input:checked ~ span{
+            display: none;         
+        }
+
+        /* --- Animatie van 3 STREEPJES naar KRUIS --- */
+            #menuToggle input:checked ~ span:nth-last-child(3){
+                display: none;
+            }
+
+            #menuToggle input:checked ~ span:nth-last-child(2){
+                display: none;
+            }
+        /* --- Eind Animatie van 3 STREEPJES naar KRUIS --- */
+
+        #menu{
+            display: none;
+        }
+
+        #menu li{
+            display: none;
+        }
+
+        #menuToggle input:checked ~ ul{
+            display: none;
+        }
+    /*--- Eind Mobiel CSS ---*/
+
+    /*--- Begin PC CSS ---*/
+        .navbar{
+            display: flex;
+            width: 100%;
+            background-color: #ebebeb;
+            justify-content: center;
+            box-shadow: 0 0 10px 0 #ebebeb;
+        }
+        
+        .mainmenu ul, .dropdownmenu li {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .mainmenu ul {
+            background: #ebebeb;
+            list-style: none;
+            width: 100%;
+        }
+
+        .mainmenu li {
+            display: flex;
+            position: relative;
+            width: auto;
+        }
+
+        .mainmenu a {
+            background: #ebebeb;
+            color: #8a8a8a;
+            display: block;
+            font: bold 12px/20px sans-serif;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .mainmenu li:hover a {
+            background: #8a8a8a;
+            color: #ebebeb;
+        }
+
+        #submenu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            justify-content: center;
+        }
+
+        li:hover ul#submenu {
+            top: 40px; 
+            visibility: visible;
+            padding: 0px;
+        }
+
+        #submenu li {
+            display: flex;
+            width: 100%;
+            box-shadow: 0 0 10px 0 #ebebeb;
+            justify-content: center;
+        }
+
+        #submenu a:hover {
+            background: #8a8a8a;
+            color: #ebebeb;
+            width: 100%;
+        }
+
+        #submenu a {
+            background-color: #ebebeb;
+            color: #8a8a8a;
+        }
+    /*--- Begin PC CSS ---*/
+
+    /*--- Begin Algemene CSS ---*/
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("../img/link.png");
+            background-size: 40%;
+            background-color: #0f0f0f;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: 80% 50%;
+        }
+
+        .cloakdiv{
+            display: none;
+            justify-content: center;
+        }
+
+        .cloak{
+            display: none;
+            width: 52%;
+            height: 52%;
+            position: center;
+        }
+        
+        .lore{
+            margin: 15px;
+            padding: 10px;
+            border: 1px dashed #ebebeb;
+            position: relative;
+            left: 20%;
+            width: 400px;
+            padding: 10px;
+            border: none;
+        }
+
+        .text{
+            color: #ebebeb;
+            font-family: 'Mirza', cursive;
+            text-shadow: 2px 2px #3B3B3B;
+        }
+
+        .needyou{
+            font-family: 'Mirza', cursive;
+            text-shadow: 2px 2px #3B3B3B;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        hr{
+            border: 0;
+            height: 1px;
+            width: 58%;
+            background: #0f0f0f;
+            background-image: linear-gradient(to right, #ebebeb, #0f0f0f, #ebebeb);
+        }
+
+        .strong{
+            font-weight: bold;
+            font-size: 25px;
+            list-style: none;
+        }
+
+        .quote{
+            font-style: italic;
+        }
+
+        footer {
+            text-decoration: none;
+            text-align: center;
+            color: #ebebeb;
+            font-family: 'Mirza', cursive;
+            text-shadow: 2px 2px #3B3B3B;
+            bottom: 0;  
+        }
+        
+        footer a{
+            color: inherit;
+            text-decoration: none;
+        }
+    /*--- Begin Algemene CSS ---*/
+
+}
+
+.overviewlinks{
+    color: red;
+}
